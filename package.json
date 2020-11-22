@@ -1,6 +1,6 @@
 {
   "name": "@yoozrr/timelines-chart",
-  "version": "2.11.1",
+  "version": "2.11.2",
   "description": "A parallel (swimlanes) timelines D3 chart for representing state of time-series over time.",
   "keywords": [
     "timelines",
@@ -11,10 +11,7 @@
     "heatmap",
     "lines"
   ],
-  "author": {
-    "name": "Sherman Lai",
-    "url": "https://yoozrr.com"
-  },
+  "author": "Sherman Lai (https://yoozrr.com)",
   "license": "MIT",
   "unpkg": "dist/timelines-chart.min.js",
   "main": "dist/timelines-chart.common.js",
@@ -23,7 +20,7 @@
   "homepage": "https://github.com/vasturiano/timelines-chart",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vasturiano/timelines-chart.git"
+    "url": "git+https://github.com/yoozrr/timelines-chart.git"
   },
   "scripts": {
     "build": "rimraf dist && rollup -c",
@@ -65,5 +62,11 @@
     "rollup-plugin-postcss": "^3.1.8",
     "rollup-plugin-terser": "^7.0.2",
     "typescript": "^4.0.5"
+  },
+  "bugs": {
+    "url": "https://github.com/yoozrr/timelines-chart/issues"
+  },
+  "directories": {
+    "example": "example"
   }
 }
