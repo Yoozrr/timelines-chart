@@ -39,6 +39,15 @@ myChart
     (<myDOMElement>);
 ```
 
+## To build
+Run ```npm run build```
+
+To run in dev mode
+```npm link``` in the current timeline directory, then 
+cd into your required directory, and ```npm link timelines-chart```.
+
+To auto build, you'll ```npm run dev:watch```, but you'll still need to restart the parent app to reload the depencies. 
+
 ## API reference
 
 | Method | Description | Default |

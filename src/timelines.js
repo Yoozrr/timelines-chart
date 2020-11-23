@@ -896,7 +896,7 @@ export default Kapsule({
         state.svg.selectAll('g.y-axis,g.grp-axis').selectAll('text')
           .style('cursor', 'pointer')
           .on('click', function(d) {
-            const segms = d.split('+&+');
+            const segms = d.target.__data__.split('+&+');
             state.onLabelClick(...segms.reverse());
           });
       }

@@ -1,5 +1,5 @@
 {
-  "name": "timelines-chart",
+  "name": "@yoozrr/timelines-chart",
   "version": "2.11.1",
   "description": "A parallel (swimlanes) timelines D3 chart for representing state of time-series over time.",
   "keywords": [
@@ -12,8 +12,8 @@
     "lines"
   ],
   "author": {
-    "name": "Vasco Asturiano",
-    "url": "http://bl.ocks.org/vasturiano"
+    "name": "Sherman Lai",
+    "url": "https://yoozrr.com"
   },
   "license": "MIT",
   "unpkg": "dist/timelines-chart.min.js",
@@ -27,7 +27,8 @@
   },
   "scripts": {
     "build": "rimraf dist && rollup -c",
-    "dev": "rollup -w -c rollup.config.dev.js",
+    "dev": "nodemon --watch src/ --exec rollup -w -c rollup.config.dev.js",
+    "dev:watch": "nodemon --watch src/ --exec npm run build",
     "prepare": "npm run build"
   },
   "files": [
