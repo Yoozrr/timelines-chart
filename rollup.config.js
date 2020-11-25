@@ -14,18 +14,21 @@ const umdConf = {
   banner: `// Version ${version} ${name} - ${homepage}`
 };
 
+const reg = name.match(/(@[\w-]+\/)?([\w-]+)/i)
+const subName = reg[2]
+
 export default [
   {
     input: 'src/index.js',
     output: [
       { // umd
         ...umdConf,
-        file: `dist/${name}.js`,
+        file: `dist/${subName}.js`,
         sourcemap: true,
       },
       { // minify
         ...umdConf,
-        file: `dist/${name}.min.js`,
+        file: `dist/${subName}.min.js`,
         plugins: [terser({
           output: { comments: '/Version/' }
         })]
@@ -48,11 +51,11 @@ export default [
     output: [
       {
         format: 'cjs',
-        file: `dist/${name}.common.js`
+        file: `dist/${subName}.common.js`
       },
       {
         format: 'es',
-        file: `dist/${name}.module.js`
+        file: `dist/${subName}.module.js`
       }
     ],
     external: [...Object.keys(dependencies || {}), ...Object.keys(peerDependencies || {})],
@@ -69,7 +72,7 @@ export default [
   { // expose TS declarations
     input: 'src/index.d.ts',
     output: [{
-      file: `dist/${name}.d.ts`,
+      file: `dist/${subName}.d.ts`,
       format: 'es'
     }],
     plugins: [dts()]

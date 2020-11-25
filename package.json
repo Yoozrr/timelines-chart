@@ -1,6 +1,6 @@
 {
-  "name": "@yoozrr/timelines-chart",
-  "version": "2.11.2",
+  "name": "@shipx/timelines-chart",
+  "version": "2.11.4",
   "description": "A parallel (swimlanes) timelines D3 chart for representing state of time-series over time.",
   "keywords": [
     "timelines",
@@ -17,7 +17,7 @@
   "main": "dist/timelines-chart.common.js",
   "module": "dist/timelines-chart.module.js",
   "types": "dist/timelines-chart.d.ts",
-  "homepage": "https://github.com/vasturiano/timelines-chart",
+  "homepage": "https://github.com/yoozrr/timelines-chart",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yoozrr/timelines-chart.git"

@@ -48,6 +48,10 @@ cd into your required directory, and ```npm link timelines-chart```.
 
 To auto build, you'll ```npm run dev:watch```, but you'll still need to restart the parent app to reload the depencies. 
 
+This packaege is built to @shipx/timelines-chart, to deploy, make sure you login to `npm login`.
+
+To deploy to to npm, use `npm publish --access public`
+
 ## API reference
 
 | Method | Description | Default |
