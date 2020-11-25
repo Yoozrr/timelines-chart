@@ -50,7 +50,7 @@ To auto build, you'll ```npm run dev:watch```, but you'll still need to restart 
 
 This packaege is built to @shipx/timelines-chart, to deploy, make sure you login to `npm login`.
 
-To deploy to to npm, use `npm publish --access public`
+To deploy to to npm, `npm run build` then `npm publish --access public`
 
 ## API reference
 
